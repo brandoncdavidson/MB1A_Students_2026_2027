@@ -78,3 +78,51 @@ z <- TRUE
 print(z)
 print(class(z))
 ```
+
+Loading packages for Part 4 exercises.
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+Combine vectors
+
+```{r}
+cell_ID_vec <- c(cell_ID_1, cell_ID_2)
+print(cell_ID_vec)
+
+treated_vec <- c(treated_1, treated_2)
+print(treated_vec)
+
+before_vec <- c(before_1, before_2)
+print(before_vec)
+
+after_vec <- c(after_1, after_2)
+print(after_vec)
+```
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+
+my_favourite <- all_my_pets[4]
+print(my_favourite)
+```
+
+```{r}
+my_df <- tibble(
+  cell_ID = cell_ID_vec,
+  treated = treated_vec,
+  num_cells_before = before_vec,
+  num_cells_after = after_vec
+)
+
+print(my_df)
+
+gt(my_df)
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
+
+gt(weather)
+```
+

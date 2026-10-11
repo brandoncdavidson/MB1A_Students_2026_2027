@@ -1,0 +1,80 @@
+---
+title: "prac1_exercises"
+author: "Brandon Davidson"
+---
+
+##Functions
+
+The first exercise is to look at the rounding function.
+
+```{r}
+pi <- 3.14159
+round(pi)
+
+round(pi, digits = 2)
+```
+
+The second exercise is to look at the how we ensure that we are calling the correct argument. These in-built functions have several parameters that can be changed to fit your need. These can be called by correctly ordering your inputs, or specifying them directly.
+
+When naming the parameters directly, the order can be swapped around. 
+
+```{r}
+print(seq(1, 10, 2))
+print(seq(5, 15, 5))
+
+print(seq(by = 2, from = 1, to = 10))
+print(seq(by = 5, to = 15, from = 5))
+```
+
+Using the sequence function.
+
+```{r}
+print(rep(5, 7))
+print(rep(x = 5, times = 7))
+print(rep(times = 7, x = 5))
+```
+
+##Variables
+
+```{r}
+whatsmynumber <- 1
+whatsmynumber <- 5
+```
+
+whatsmynumber shows 5, as that is the most recent argument that defines what the variable is representing. Any previous definitions have now been overridden.
+
+Variable types.
+
+```{r}
+x <- "Brandon"
+print(x)
+print(class(x))
+
+y <- 23
+print(y)
+print(class(y))
+
+z <- TRUE
+print(z)
+print(class(z))
+```
+
+whatsmynumber shows 5, as that is the most recent argument that defines what the variable is representing. Any previous definitions have now been overridden.
+
+```{r}
+cell_ID_1 <- "CX1"
+cell_ID_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+before_1 <- 5415
+before_2 <- 8123
+
+after_1 <- 1432
+after_2 <- 7543
+
+z <- TRUE
+print(z)
+print(class(z))
+```

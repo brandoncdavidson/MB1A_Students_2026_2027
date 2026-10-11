@@ -3,6 +3,10 @@ title: "hpa_quarto"
 author: "Brandon Davidson"
 ---
 
+```{r}
+library(styler)
+```
+
 ## Human
 
 ```{r}
